@@ -17,12 +17,6 @@
     "*.{ts,js,vue}": "eslint --fix",
     "*.{css,vue}": "stylelint"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "core-js": "^3.10.1",
     "nuxt": "^2.15.4"
