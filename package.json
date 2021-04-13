@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "author": "sogehige@gmail.com",
   "description": "Nuxt.js version of ui-login",
-  "private":"true",
   "scripts": {
     "prepublish": "npm run generate",
     "dev": "nuxt",
