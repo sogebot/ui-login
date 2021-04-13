@@ -1,5 +1,18 @@
 <template>
-  <div>Please wait until it is redirected back to bot.</div>
+  <v-app dark>
+    <v-overlay dark>
+      <v-row>
+        <v-col class="text-center">
+          <v-progress-circular indeterminate size="48" />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col class="font-weight-light">
+          Please wait until it is redirected back to bot.
+        </v-col>
+      </v-row>
+    </v-overlay>
+  </v-app>
 </template>
 
 <script lang="ts">
