@@ -27,6 +27,10 @@
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sogehige/sogebot-ui-login.git"
+  },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
