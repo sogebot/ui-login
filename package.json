@@ -1,10 +1,10 @@
 {
   "name": "@sogebot/ui-oauth",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "author": "sogehige@gmail.com",
   "description": "Nuxt.js version of ui-oauth",
   "scripts": {
-    "prepublishOnly": "npm run generate",
+    "prepublishOnly": "npm run build",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
