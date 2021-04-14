@@ -1,10 +1,10 @@
 {
   "name": "@sogebot/ui-oauth",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "author": "sogehige@gmail.com",
   "description": "Nuxt.js version of ui-oauth",
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run generate",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -19,14 +19,14 @@
   },
   "dependencies": {
     "core-js": "^3.10.1",
-    "nuxt": "^2.15.4"
+    "nuxt": "^2.15.4",
+    "@sogebot/ui-helpers": "^1.0.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sogehige/sogebot-ui-login.git"
   },
   "devDependencies": {
-    "@sogebot/ui-helpers": "^1.0.1",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "@mdi/js": "^5.9.55",
