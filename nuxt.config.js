@@ -18,6 +18,10 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
+  env: {
+    isNuxtDev: process.env.NODE_ENV === 'development'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
