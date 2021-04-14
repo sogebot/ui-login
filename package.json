@@ -1,6 +1,6 @@
 {
   "name": "@sogebot/ui-oauth",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "sogehige@gmail.com",
   "description": "Nuxt.js version of ui-oauth",
   "scripts": {
@@ -18,9 +18,9 @@
     "*.{css,vue}": "stylelint"
   },
   "dependencies": {
+    "@sogebot/ui-helpers": "^1.0.5",
     "core-js": "^3.10.1",
-    "nuxt": "^2.15.4",
-    "@sogebot/ui-helpers": "^1.0.3"
+    "nuxt": "^2.15.4"
   },
   "repository": {
     "type": "git",
