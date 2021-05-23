@@ -63,7 +63,7 @@ export default {
   build: {},
 
   router: {
-    mode: 'hash',
-    base: '/login/',
+    mode: 'history',
+    base: '/credentials/',
   },
 }

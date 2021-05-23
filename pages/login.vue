@@ -134,6 +134,7 @@ export default defineComponent({
       window.location.assign('http://oauth.sogebot.xyz/?state=' + encodeURIComponent(window.btoa(
         JSON.stringify({
           url: url.value,
+          version: 2,
           referrer: document.referrer
         })
       )))
