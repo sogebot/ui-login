@@ -3,6 +3,10 @@ export default {
   target: 'static',
   ssr: false,
 
+  server: {
+    port: 3001
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s',
@@ -56,5 +60,10 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+
+  router: {
+    mode: 'hash',
+    base: '/login/',
+  },
 }

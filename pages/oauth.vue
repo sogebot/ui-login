@@ -40,7 +40,7 @@ export default defineComponent({
         window.location.assign(`${gotoAfterLogin || state.referrer || state.url}`)
       } catch (error) {
         console.log({ error })
-        window.location.assign(window.location.origin + '/login')
+        window.location.assign(window.location.origin + '/credentials')
       }
     })
   }
