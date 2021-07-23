@@ -18,7 +18,7 @@
     "*.{css,vue}": "stylelint"
   },
   "dependencies": {
-    "@sogebot/ui-helpers": "^1.10.0",
+    "@sogebot/ui-helpers": "^2.4.1",
     "core-js": "^3.12.1",
     "nuxt": "^2.15.6"
   },
