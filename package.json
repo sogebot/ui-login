@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.29.3",
-    "@sogebot/ui-helpers": "^1.10.0",
+    "@sogebot/ui-helpers": "^2.8.0",
     "core-js": "^3.12.1",
     "nuxt": "^2.15.6"
   },
