@@ -21,7 +21,7 @@
             Login
           </v-btn>
         </v-col>
-        <v-col>
+        <v-col v-if="publicPageAvailability">
           <v-btn
             block
             color="info"
@@ -53,7 +53,7 @@
             Login
           </v-btn>
         </v-col>
-        <v-col>
+        <v-col v-if="publicPageAvailability">
           <v-btn
             block
             color="info"
@@ -102,7 +102,7 @@
 <script lang="ts">
 import { mdiCheckboxMarkedCircleOutline, mdiCloseCircleOutline } from '@mdi/js'
 import {
-  computed, defineComponent, onMounted
+  computed, defineComponent, onMounted, ref
 } from '@vue/composition-api'
 
 export default defineComponent({
@@ -117,10 +117,18 @@ export default defineComponent({
       }
       return null
     })
+
     const url = computed(() => window.location.origin)
     const publicPage = () => {
       window.location.assign(url.value + '/public/')
     }
+
+    // check if public page is available
+    const publicPageAvailability = ref(false);
+    fetch('http://localhost:20000' + '/public/?check=true').then((response) => {
+      publicPageAvailability.value = response.ok && response.status === 200;
+    })
+
     const tryAgain = () => {
       const gotoAfterLogin = sessionStorage.getItem('goto-after-login')
       if (gotoAfterLogin) {
@@ -152,6 +160,7 @@ export default defineComponent({
       login,
       publicPage,
       tryAgain,
+      publicPageAvailability,
 
       mdiCheckboxMarkedCircleOutline,
       mdiCloseCircleOutline

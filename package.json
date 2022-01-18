@@ -1,6 +1,6 @@
 {
   "name": "@sogebot/ui-oauth",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "author": "sogehige@gmail.com",
   "description": "Nuxt.js version of ui-oauth",
   "scripts": {
@@ -18,10 +18,10 @@
     "*.{css,vue}": "stylelint"
   },
   "dependencies": {
-    "@nuxtjs/composition-api": "^0.29.3",
-    "@sogebot/ui-helpers": "^1.10.0",
-    "core-js": "^3.12.1",
-    "nuxt": "^2.15.6"
+    "@nuxtjs/composition-api": "^0.31.0",
+    "@sogebot/ui-helpers": "^2.8.0",
+    "core-js": "^3.20.3",
+    "nuxt": "^2.15.8"
   },
   "repository": {
     "type": "git",
@@ -30,14 +30,15 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "@mdi/js": "^5.9.55",
-    "@nuxt/types": "^2.15.6",
+    "@mdi/js": "^6.5.95",
+    "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "npm-check-updates": "^12.1.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
-    "@nuxtjs/vuetify": "^1.11.3",
-    "@types/lodash-es": "^4.17.4",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "@types/lodash-es": "^4.17.5",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
