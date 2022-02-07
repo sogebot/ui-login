@@ -48,7 +48,7 @@ export default defineComponent({
         if (urlState === spotifyState) {
           socket.emit('spotify::code', urlCode, () => {
             state.value = true;
-            window.location.href = window.location.origin + '/#/settings/integrations/spotify';
+            window.location.href = window.location.origin + '/#/settings/modules/integrations/spotify';
           });
         } else {
           state.value = false;
