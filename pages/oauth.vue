@@ -26,6 +26,14 @@ export default defineComponent({
         const code = url.searchParams.get('code')
         const state = JSON.parse(window.atob(url.searchParams.get('state') ?? ''))
 
+        // goto after login
+        const gotoAfterLogin = sessionStorage.getItem('goto-after-login')
+        sessionStorage.removeItem('goto-after-login')
+
+        console.group('oauth::onMounted')
+        console.debug({ url, code, state, gotoAfterLogin })
+        console.groupEnd()
+
         // save token code to localStorage
         localStorage.setItem('code', code ?? '')
 
@@ -33,13 +41,9 @@ export default defineComponent({
         localStorage.removeItem('accessToken')
         localStorage.removeItem('refreshToken')
 
-        // goto after login
-        const gotoAfterLogin = sessionStorage.getItem('goto-after-login')
-        sessionStorage.removeItem('goto-after-login')
-
         window.location.assign(`${gotoAfterLogin || state.referrer || state.url}`)
       } catch (error) {
-        console.log({ error })
+        console.error({ error })
         window.location.assign(window.location.origin + '/credentials')
       }
     })
