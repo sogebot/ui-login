@@ -1,6 +1,6 @@
 {
   "name": "@sogebot/ui-oauth",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "author": "sogehige@gmail.com",
   "description": "Nuxt.js version of ui-oauth",
   "scripts": {
