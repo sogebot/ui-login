@@ -139,7 +139,7 @@ export default defineComponent({
       }
     }
     const login = () => {
-      window.location.assign('http://oauth.sogebot.xyz/?state=' + encodeURIComponent(window.btoa(
+      window.location.assign('http://ui-oauth-redirecter.soge.workers.dev/?state=' + encodeURIComponent(window.btoa(
         JSON.stringify({
           url: url.value,
           version: 2,
