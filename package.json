@@ -28,7 +28,7 @@
     "url": "git+https://github.com/sogehige/sogebot-ui-login.git"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
+    "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^16.2.1",
     "@mdi/js": "^6.6.96",
     "@nuxt/types": "^2.15.8",
